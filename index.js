@@ -209,12 +209,13 @@ function readDB(searchCriteria,excelURL,dbType){
         var arr = new Array();
         for (var i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
         var bstr = arr.join("");
+        console.log(bstr);
 
         /* Call XLSX */
         var workbook = XLSX.read(bstr, {
             type: "binary"
         });
-
+        console.log(workbook);
         /* DO SOMETHING WITH workbook HERE */
         var first_sheet_name = workbook.SheetNames[0];
         /* Get worksheet */
