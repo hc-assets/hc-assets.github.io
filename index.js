@@ -378,11 +378,11 @@ function createJSON(i){
     jsonRes.category = jsonData[i]["Asset Category"] ? jsonData[i]["Asset Category"].toString().trim() : '';
     jsonRes.description = jsonData[i]["Asset Description"] ? jsonData[i]["Asset Description"].toString().trim(): '';
     jsonRes.name = jsonData[i]["Asset Name"] ? jsonData[i]["Asset Name"].toString().trim() : '';
-    jsonRes.industry = jsonData[i]["Industry"].toString().trim();
-    jsonRes.domain = jsonData[i]["Domain"].toString().trim();
+    jsonRes.industry = jsonData[i]["Industry"] ? jsonData[i]["Industry"].toString().trim() : '';
+    jsonRes.domain = jsonData[i]["Domain"] ? jsonData[i]["Domain"].toString().trim() : '';
     jsonRes.poc = jsonData[i]["Asset Lead"] ? jsonData[i]["Asset Lead"].toString().trim() : '';
     jsonRes.kpis = jsonData[i]["Value Delivered/Key KPIs"] ? jsonData[i]["Value Delivered/Key KPIs"].toString().trim() : '';
-    jsonRes.percentage = jsonData[i]["Positive Client Feedback Percentage"].toString().trim();
+    jsonRes.percentage = jsonData[i]["Positive Client Feedback Percentage"] ? jsonData[i]["Positive Client Feedback Percentage"].toString().trim() : '';
     jsonRes.ppmd = jsonData[i]["Project PPMDs"] ? jsonData[i]["Project PPMDs"].toString().trim() : '';
     jsonRes.nextGen = jsonData[i]["Tech/AI/Core Capabilities"] ? jsonData[i]["Tech/AI/Core Capabilities"].toString().trim() : '';
     jsonRes.client = jsonData[i]["Key Accounts/Clients"] ? jsonData[i]["Key Accounts/Clients"].toString().trim() : '';
