@@ -278,7 +278,7 @@ function createCards(searchCriteria){
             || resSearchCriteria.giftbox.toLowerCase().includes(jsonRes.giftbox.toLowerCase()) ))
         {
             resultsCount +=1;
-            searchPer -= 2;
+            searchPer -= 1;
             let htmlBody = '<div class="card col-md-12 card-holder mt-2 no-padding"><div class="row card-container g-0 justify-content-around"><div class="col-md-2 no-padding"><img class="card-size-cus" src="assets/' + jsonRes.image + '" alt="Card image cap"></div><div class="col-md-10"><div class="card-body cust-padding-card-body"><div class="card-title-header"><h4 class="card-title card-heading font-weight-bolder">' + jsonRes.name + '</h4></div><form class="rating tiles-rating">[rating]</form><div class="tiles-rating-reviews"><h7>[review] ratings</h7></div><table class="table  table-bordered "><thead class="table-color"><th scope="row">Industry</th><th scope="row">Domain/Target Capability</th><th scope="row">POC</th><th scope="row">Category</th></thead><tbody><tr><td>' + jsonRes.industry + '</td><td>' + jsonRes.domain + '</td><td>' + jsonRes.poc + '</td><td>' + jsonRes.category + '</td></tr></tbody></table><h5 class="font-weight-bold min-margin card-subheading">Asset Description:</h5><p class="card-text min-margin">' + jsonRes.description + '</p><h5 class="font-weight-bold min-margin card-subheading">Key KPIs/Value Delivered:</h5><p class="card-text min-margin">' + jsonRes.kpis + '</p></div><div class="col-md-12 text-md-center details-overlay mb-1"><div><a href="'+detailsLink+'" class="btn btn-primary details-btn">More Details</a></div></div><div class="percentage-tag">' + (searchPer) + '% Matched</div></div></div ></div>'
             let ratingHtml = '';
             let max = 5;
