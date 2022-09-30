@@ -223,6 +223,7 @@ function readDB(searchCriteria,excelURL,dbType){
             jsonData = XLSX.utils.sheet_to_json(worksheet, {
                 raw: true
             });
+            console.log("JSON data:", jsonData)
             var pageUrl = window.location.href;
             if (pageUrl.includes('detailed-dashboard')) {
                 detailsPage();
