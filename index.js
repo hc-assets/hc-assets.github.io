@@ -375,7 +375,7 @@ function getUrlVars() {
 //Create JSON for each card
 function createJSON(i){
     let jsonRes = {};
-    console.log('This is i:', i);
+    console.log('This is i:', jsonData[i]);
     jsonRes.category = jsonData[i]["Asset Category"] ? jsonData[i]["Asset Category"].toString().trim() : '';
     jsonRes.description = jsonData[i]["Asset Description"] ? jsonData[i]["Asset Description"].toString().trim(): '';
     jsonRes.name = jsonData[i]["Name"] ? jsonData[i]["Name"].toString().trim() : '';
