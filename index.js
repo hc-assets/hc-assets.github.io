@@ -380,7 +380,7 @@ function createJSON(i){
     console.log('This is i:', jsonData[i]);
     jsonRes.category = jsonData[i]["Asset Category"] ? jsonData[i]["Asset Category"].toString().trim() : '';
     jsonRes.description = jsonData[i]["Asset Description"] ? jsonData[i]["Asset Description"].toString().trim(): '';
-    jsonRes.name = jsonData[i]["\"Name\""] ? jsonData[i]["\"Name\""].toString().trim() : '';
+    jsonRes.name = jsonData[i]["Asset Name"] ? jsonData[i]["Asset Name"].toString().trim() : '';
     jsonRes.industry = jsonData[i]["Industry"] ? jsonData[i]["Industry"].toString().trim() : '';
     jsonRes.domain = jsonData[i]["Domain"] ? jsonData[i]["Domain"].toString().trim() : '';
     jsonRes.poc = jsonData[i]["Asset Lead"] ? jsonData[i]["Asset Lead"].toString().trim() : '';
